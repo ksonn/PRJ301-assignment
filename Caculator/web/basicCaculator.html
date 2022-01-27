@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>Homework1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .title{
+                font-size: 30px;
+                text-align: center;
+            }
+            .container{
+                display: table;
+            }
+            table{
+                margin: 10px 600px;
+                border: 1px solid black;
+            }
+            #equal{
+                border: none;
+                padding-left: 150px;
+            }
+            #operator{
+                width: 154.5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">Caculator</div>
+        <form action="caculator" method="POST" class="container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Enter first number:</td>
+                        <td><input type="number" name="num1" /></td>
+                    </tr>
+                    <tr>
+                        <td>Enter second number:</td>
+                        <td><input type="number" name="num2" /></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your operator:</td>
+                        <td >
+                            <select name="operator" id="operator">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="*">*</option>
+                                <option value="/">/</option>
+                                <option value="%">%</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="equal"><input type="Submit" value="=" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
